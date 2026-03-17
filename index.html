@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ata Executiva - 17.03.2026 | Live Consultoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #06192a;
+            --card-bg: #0A243D;
+            --accent-color: #00e800;
+            --text-primary: #ffffff;
+            --text-muted: #cccccc;
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Merriweather', serif;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --space-md: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-attachment: fixed;
+            color: var(--text-primary);
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 5px 15px;
+            background: var(--accent-color);
+            color: var(--primary-bg);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 20px;
+            font-family: var(--font-secondary);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: var(--space-md);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .summary-text {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-style: italic;
+            border-left: 3px solid var(--border-color);
+            padding-left: 20px;
+        }
+
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .meta-item b {
+            color: var(--accent-color);
+            display: block;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .action-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .action-table th {
+            text-align: left;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .action-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        .status-badge {
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .price-card {
+            text-align: center;
+            border: 1px dashed var(--accent-color);
+        }
+
+        .price-val {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 15px 0;
+        }
+
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .action-table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fade-in">
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/Clebito2/ConsultoriaLive/main/Logo%20live%20oficial-21.png" alt="Live Consultoria" class="logo">
+            <h1>Cúpula CEO & The Catalyst</h1>
+            <div class="chip">ATA ESTRATÉGICA | 17.03.2026</div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="fade-in">
+            <h2 class="section-title">0. Sumário Executivo</h2>
+            <div class="card">
+                <p class="summary-text">
+                    Refinamento logístico do evento de 24/03 em Goiânia e planejamento da expansão para Brasília/SP. 
+                    Foco na experiência "Básico Bem Feito" para CEOs e estruturação dos tickets da Mentoria Catalyst.
+                </p>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <h2 class="section-title">1. Cabeçalho e Participantes</h2>
+            <div class="card metadata-grid">
+                <div class="meta-item"><b>Data/Hora</b>17/03/2026 - 16:00</div>
+                <div class="meta-item"><b>Local</b>Escritório Live</div>
+                <div class="meta-item"><b>Condutor</b>Cléber (Tech Lead)</div>
+                <div class="meta-item"><b>Presentes</b>Patrícia, João, Luiz</div>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <h2 class="section-title">2. Decisões Estratégicas</h2>
+            <div class="card">
+                <h3>Expansão Brasília (Royal Tulip)</h3>
+                <p style="color: var(--text-muted); margin: 10px 0;">Patrícia recomendou o Royal Tulip pela malha aérea superior. Decidiu-se orçar para o evento de 2 dias.</p>
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 15px 0;">
+                
+                <h3>Experiência Satelital e Networking</h3>
+                <ul style="color: var(--text-muted); padding-left: 20px;">
+                    <li><b>Welcome:</b> Violinista e Garçons Volantes (sem filas).</li>
+                    <li><b>Menu:</b> Croissants Bendita Madre, Favo de Mel, Café Barista.</li>
+                    <li><b>Lunch-Lounge:</b> Almoço em pé/bistrô para público geral visando networking dinâmico.</li>
+                </ul>
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 15px 0;">
+
+                <h3>Sales & Gamification (No Pitch)</h3>
+                <p style="color: var(--text-muted); margin: 10px 0;">Proibição de Pitches de Venda agressivos no palco. A venda de Mentorias High-Ticket ocorrerá via gatilhos de escassez e sorteio de uma <b>"Sessão de Conselho"</b> (ancorada pela IA Júlio).</p>
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 15px 0;">
+
+                <h3>Lançamento Satélite</h3>
+                <p style="color: var(--text-muted); margin: 10px 0;">O evento será palco para o livro <b>"O Código da Nova Liderança"</b>, inovando com IA nativa (Notebook LM) para leitura interativa via QR Code.</p>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <h2 class="section-title">3. Estruturação de Ingressos</h2>
+            <div class="pricing-grid">
+                <div class="card price-card">
+                    <b>GERAL</b>
+                    <div class="price-val">R$ 1.498</div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Acesso completo ao conteúdo do dia 24/03.</p>
+                </div>
+                <div class="card price-card">
+                    <b style="color: var(--accent-color);">VIP UPSELL</b>
+                    <div class="price-val">R$ 998</div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Assento exclusivo, interação com palestrantes e café na mesa.</p>
+                </div>
+                <div class="card price-card">
+                    <b>DINNER ACCESS</b>
+                    <div class="price-val">R$ 7.998</div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Jantar de negócios privativo e diagnóstico Inam Matrix (78 páginas).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <h2 class="section-title">4. Plano de Ação (5W2H)</h2>
+            <div class="card" style="padding: 10px; overflow-x: auto;">
+                <table class="action-table">
+                    <thead>
+                        <tr>
+                            <th>O QUE</th>
+                            <th>QUEM</th>
+                            <th>PRAZO</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Visita WTC (Cenografia/Palco)</td>
+                            <td>Cléber/Patrícia</td>
+                            <td>19/03</td>
+                            <td><span class="status-badge">AGENDADO</span></td>
+                        </tr>
+                        <tr>
+                            <td>Orçamento Royal Tulip (BSB)</td>
+                            <td>Patrícia</td>
+                            <td>25/03</td>
+                            <td><span class="status-badge">A INICIAR</span></td>
+                        </tr>
+                         <tr>
+                            <td>Planilha de Custos (MB/Leandro)</td>
+                            <td>Patrícia</td>
+                            <td>23/03</td>
+                            <td><span class="status-badge">A INICIAR</span></td>
+                        </tr>
+                        <tr>
+                            <td>Config. IA "Júlio" (Sorteio)</td>
+                            <td>Cléber</td>
+                            <td>22/03</td>
+                            <td><span class="status-badge">EM CURSO</span></td>
+                        </tr>
+                        <tr>
+                            <td>IA Livro (Notebook LM)</td>
+                            <td>Cléber</td>
+                            <td>Setembro</td>
+                            <td><span class="status-badge">A INICIAR</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="fade-in">
+        <div class="container">
+            <p>&copy; 2026 Live Consultoria. Todos os direitos reservados.</p>
+            <p style="font-size: 0.7rem; margin-top: 10px;">PROJETO VIDI | TECNOIT ECOSYSTEM</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
